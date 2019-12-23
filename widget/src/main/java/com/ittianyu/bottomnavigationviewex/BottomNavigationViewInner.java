@@ -967,4 +967,14 @@ public class BottomNavigationViewInner extends BottomNavigationView {
         return this;
     }
 
+    /**
+     *
+     * @param position the position of the item
+     * @param clickable whether to make the item clickable or not
+     */
+    public void setItemClickable(int position,boolean clickable){
+        BottomNavigationItemView itemView = getBottomNavigationItemView(position);
+        itemView.setClickable(clickable);
+    }
+
 }

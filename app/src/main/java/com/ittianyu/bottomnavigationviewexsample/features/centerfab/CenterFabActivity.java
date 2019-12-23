@@ -87,6 +87,7 @@ public class CenterFabActivity extends AppCompatActivity {
         bind.bnve.enableItemShiftingMode(false);
         bind.bnve.enableShiftingMode(false);
         bind.bnve.enableAnimation(false);
+        bind.bnve.setItemClickable(2,false);
 
         // set adapter
         adapter = new VpAdapter(getSupportFragmentManager(), fragments);
